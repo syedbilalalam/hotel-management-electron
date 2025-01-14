@@ -1,0 +1,46 @@
+{
+  "name": "hotel-management",
+  "version": "1.0.0",
+  "description": "Castle of programmers",
+  "keywords": [
+    "Hotel",
+    "management"
+  ],
+  "license": "ISC",
+  "author": "Private",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^33.3.1",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "hotel.management.castleofpros",
+    "productName": "HotelManagement",
+    "icon": "assets/app.ico",
+    "asar": true,
+    "files": [
+      "**/*",
+      "!**/*.ts",
+      "!cpp_base.exe"
+    ],
+    "extraFiles": [
+      {
+        "from": "cpp_base.exe",
+        "to": "cpp_base.exe"
+      },
+      {
+        "from": "cpp_base.cpp",
+        "to": "cpp_base.cpp"
+      }
+    ],
+    "directories": {
+      "output": "dist"
+    }
+  }
+}

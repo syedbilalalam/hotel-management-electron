@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Room</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../index_files/docs/global.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Book a Room</h1>
+        </div>
+        <form id="bookingForm" method="POST">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="room-number">Room Number:</label>
+                    <input required type="number" id="room-number" name="room-number" min="1"
+                        placeholder="Enter Room Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="guest-name">Guest Name:</label>
+                    <input required type="text" id="guest-name" name="guest-name" placeholder="Enter Guest Name"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input required type="tel" id="phone" name="phone" placeholder="Enter Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input required type="email" id="email" name="email" placeholder="Enter Email Address" required>
+                </div>
+                <div class="form-group">
+                    <label for="marriage-status">Marriage Status:</label>
+                    <select id="marriage-status" name="marriage-status" required>
+                        <option value="">Select</option>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="days">Days:</label>
+                    <input required type="number" id="days" name="days" min="1" placeholder="Enter Number of Days"
+                        min="1" required>
+                </div>
+            </div>
+            <div class="button-group">
+                <button id="calcCost" type="button" class="btn">Calculate Cost</button>
+                <button type="submit" type="button" class="btn">Book Room</button>
+                <button id="back" class="btn exit-btn">Back</button>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="../index_files/docs/global.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>

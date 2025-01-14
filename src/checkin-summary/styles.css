@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+    color: #333;
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 90vw;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #444;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.checkin-summary {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.summary-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 30px;
+}
+
+.summary-card h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.summary-card p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.summary-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.confirm-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.confirm-btn:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .summary-card h2 {
+        font-size: 18px;
+    }
+
+    .summary-card p {
+        font-size: 14px;
+    }
+}

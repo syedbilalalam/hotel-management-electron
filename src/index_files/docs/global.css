@@ -1,0 +1,17 @@
+.container{
+    max-height: 90vh;
+    margin: auto 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+body{
+    user-select: none;
+}
+.exit-btn {
+    background: #dc3545; /* Red for exit button */
+}
+
+.exit-btn:hover {
+    background: #b02a37; /* Darker red on hover */
+}

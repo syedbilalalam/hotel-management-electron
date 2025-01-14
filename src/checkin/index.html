@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check In</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../index_files/docs/global.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Check In</h1>
+        </div>
+        <form id="cancelBookingForm" action="../checkin-summary/index.html" method="get" class="cancel-booking-form">
+            <div class="form-group">
+                <label for="roomNumber">Enter Room Number to Check In:</label>
+                <input type="number" id="roomNumber" name="roomnumber" min="1" placeholder="Enter Room Number" required>
+                <br>
+                <label for="date">Enter check In date:</label>
+                <input type="date" id="date" name="date" placeholder="Check In date" required>
+            </div>
+            <div class="button-group">
+                <button type="submit" class="btn">Check In</button>
+                <button id="back" class="btn exit-btn">Back</button>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="../index_files/docs/global.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>

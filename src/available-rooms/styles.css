@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* Prevent scrolling */
+    color: #333;
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 90vw;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header button{
+    flex-grow: 0;
+    width: fit-content !important;
+}
+.header h1 {
+    font-size: 24px;
+    color: #444;
+    /* margin-bottom: 20px; */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.availability-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.availability-table th,
+.availability-table td {
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.availability-table th {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+}
+
+.availability-table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.availability-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.availability-table tbody tr:hover {
+    background-color: #e6f7ff;
+}
+
+.status {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.status.available {
+    color: #28a745;
+}
+
+.status.booked {
+    color: #dc3545;
+}
+
+
+.btn {
+    flex: 1;
+    background: #007bff; /* Blue for buttons */
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    text-transform: capitalize;
+}
+
+.btn:hover {
+    background: #0056b3; /* Darker blue on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .availability-table th,
+    .availability-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
