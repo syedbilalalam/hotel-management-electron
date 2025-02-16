@@ -1,13 +1,13 @@
 Setting up environment:
 Node js should be installed and npm should be accessible!
 
-Environment setup command:
+Environment setup command:  
 npm install
 
-Compile and run the app:
+Compile and run the app:  
 npm run start
 
-Build command:
+Build command:  
 npm run build
 
 The above build command should by default build the app for all platforms!
