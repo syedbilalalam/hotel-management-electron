@@ -13,4 +13,4 @@ npm run build
 The above build command should by default build the app for all platforms!
 Releases are also available they are pre build for you no need to install Node JS :)
 Whats new in 2.1.0 release:
-Check in summary page grammer fixes.
+Check in summary page grammar fixes.
